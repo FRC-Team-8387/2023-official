@@ -30,6 +30,7 @@ public class Robot extends TimedRobot {
       driveSubsystem.setDefaultCommand(new DriveCmd());
       extenderSubsystem.setDefaultCommand(new ExtenderCmd());
       pneumaticSubsystem.setDefaultCommand(new PneumaticCmd());
+      clawSubsystem.setDefaultCommand(new ClawSys());
     
   }
 
