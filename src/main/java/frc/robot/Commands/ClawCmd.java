@@ -3,14 +3,14 @@ package frc.robot.Commands;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.Constants;
 import frc.robot.Robot;
-import frc.robot.Subsystems.ExtenderSys;
+import frc.robot.Subsystems.ClawSys;
 
-public class ExtenderCmd extends CommandBase {
+public class ClawCmd extends CommandBase {
     
-    private ExtenderSys subsystem;
+    private ClawSys subsystem;
 
-    public ExtenderCmd() {
-        subsystem = Robot.extenderSubsystem;
+    public ClawCmd() {
+        subsystem = Robot.clawSubsystem;
         addRequirements(subsystem);
     }
 
@@ -19,10 +19,10 @@ public class ExtenderCmd extends CommandBase {
 
     @Override
     public void execute() {
-        if(Robot.controller.getRawButton(Constants.MAIN_A_BUTTON)) {
-            subsystem.extend(1);
-        } else if(Robot.controller.getRawButton(Constants.MAIN_B_BUTTON)) {
-            subsystem.extend(-1);
+        if(Robot.controller.getRawButton(Constants.UNKNOWN_1)) {
+            subsystem.closeClaw();
+        } else if(Robot.controller.getRawButton(Constants.UNKNOWN_2)) {
+            subsystem.openClaw();
         } else {
             subsystem.stop();
         }

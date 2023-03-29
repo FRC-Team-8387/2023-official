@@ -20,7 +20,9 @@ public class Constants {
     //Invert Drive Motors
     public static final boolean LEFT_DRIVE_INVERTED = true;
     public static final boolean RIGHT_DRIVE_INVERTED = false;
-
+    
+    //Claw Motor CAN ID
+    public static final int CLAW_MOTOR_ID = 9;
 
     /* Extender */
     //Extender Motor CAN IDs
@@ -66,4 +68,7 @@ public class Constants {
     public static final int MAIN_X_BUTTON = 3;
     public static final int MAIN_LEFT_BUTTON = 5;
     public static final int MAIN_RIGHT_BUTTON = 6;
+    public static final int UNKNOWN_1 = 7;
+    public static final int UNKNOWN_2 = 8;
+
 }
