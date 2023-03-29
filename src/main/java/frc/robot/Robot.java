@@ -12,22 +12,29 @@ import frc.robot.Commands.DriveCmd;
 import frc.robot.Commands.PneumaticCmd;
 import frc.robot.Commands.SetExtenderCmd;
 import frc.robot.Commands.ExtenderCmd;
+import frc.robot.Commands.FieldDisplayCmd;
+import frc.robot.Subsystems.ClawSys;
 import frc.robot.Subsystems.DriveSys;
 import frc.robot.Subsystems.ExtenderSys;
 import frc.robot.Subsystems.PneumaticSys;
+import frc.robot.Subsystems.VisionSys;
 
 public class Robot extends TimedRobot {
 
   public static final DriveSys driveSubsystem = new DriveSys();
   public static final ExtenderSys extenderSubsystem = new ExtenderSys();
   public static final PneumaticSys pneumaticSubsystem = new PneumaticSys();
-  public static final GenericHID controller = new GenericHID(Constants.MAIN_CONTROLLER_PORT_ID);
+  public static final VisionSys visionSubsytem = new VisionSys();
+  public static final ClawSys clawSubsystem = new ClawSys();
+  public static final GenericHID jController = new GenericHID(Constants.J_CONTROLLER_PORT_ID);
+  public static final GenericHID mController = new GenericHID(Constants.M_CONTROLLER_PORT_ID);
 
   @Override
   public void robotInit() {
       driveSubsystem.setDefaultCommand(new DriveCmd());
       extenderSubsystem.setDefaultCommand(new ExtenderCmd());
       pneumaticSubsystem.setDefaultCommand(new PneumaticCmd());
+      visionSubsytem.setDefaultCommand(new FieldDisplayCmd());
   }
 
   @Override

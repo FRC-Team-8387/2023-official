@@ -29,9 +29,9 @@ public class SetExtenderCmd extends CommandBase{
 
     @Override
     public void execute() {
-        if(Robot.controller.getRawButton(Constants.MAIN_LEFT_BUTTON)) {
+        if(Robot.jController.getRawButton(Constants.J_LEFT_BUTTON)) {
             subsystem.decrementSetPoint();
-        } else if(Robot.controller.getRawButton(Constants.MAIN_RIGHT_BUTTON)) {
+        } else if(Robot.jController.getRawButton(Constants.J_RIGHT_BUTTON)) {
             subsystem.incrementSetPoint();
         }
 

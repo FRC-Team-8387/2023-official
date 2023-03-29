@@ -55,15 +55,18 @@ public class Constants {
 
 
     /* Control Systems */
-    //Controller 
-    public static final int MAIN_CONTROLLER_PORT_ID = 0;
-    public static final int MAIN_RIGHT_VERTICAL_JOYSTICK_AXIS = 5;
-    public static final int MAIN_RIGHT_HORIZONTAL_JOYSTICK_AXIS = 4;
-    public static final int MAIN_LEFT_VERTICAL_JOYSTICK_AXIS = 1;
-    public static final int MAIN_LEFT_HORIZONTAL_JOYSTICK_AXIS = 0;
-    public static final int MAIN_A_BUTTON = 1;
-    public static final int MAIN_B_BUTTON = 2;
-    public static final int MAIN_X_BUTTON = 3;
-    public static final int MAIN_LEFT_BUTTON = 5;
-    public static final int MAIN_RIGHT_BUTTON = 6;
+    //Josiah Controller 
+    public static final int J_CONTROLLER_PORT_ID = 0;
+    public static final int J_A_BUTTON = 1;
+    public static final int J_B_BUTTON = 2;
+    public static final int J_X_BUTTON = 3;
+    public static final int J_LEFT_BUTTON = 5;
+    public static final int J_RIGHT_BUTTON = 6;
+
+    //Mason Controller
+    public static final int M_CONTROLLER_PORT_ID = 1;
+    public static final int M_RIGHT_VERTICAL_JOYSTICK_AXIS = 5;
+    public static final int M_RIGHT_HORIZONTAL_JOYSTICK_AXIS = 4;
+    public static final int M_LEFT_VERTICAL_JOYSTICK_AXIS = 1;
+    public static final int M_LEFT_HORIZONTAL_JOYSTICK_AXIS = 0;
 }

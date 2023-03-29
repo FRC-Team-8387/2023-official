@@ -31,12 +31,12 @@ public class DriveCmd extends CommandBase {
       @Override
       public void execute() {
         if (driveChooser.getSelected()) { // Tank Drive
-          Double left_power = Robot.controller.getRawAxis(Constants.MAIN_LEFT_VERTICAL_JOYSTICK_AXIS); // -1 inverts the controller axis
-          Double right_power = Robot.controller.getRawAxis(Constants.MAIN_RIGHT_VERTICAL_JOYSTICK_AXIS); // -1 inverts the controller axis
+          Double left_power = Robot.mController.getRawAxis(Constants.M_LEFT_VERTICAL_JOYSTICK_AXIS); // -1 inverts the controller axis
+          Double right_power = Robot.mController.getRawAxis(Constants.M_RIGHT_VERTICAL_JOYSTICK_AXIS); // -1 inverts the controller axis
           subsystem.drive(left_power, right_power);
         } else { // Arcade Drive
-          Double turning_power = Robot.controller.getRawAxis(Constants.MAIN_RIGHT_HORIZONTAL_JOYSTICK_AXIS);
-          Double drive_power = Robot.controller.getRawAxis(Constants.MAIN_LEFT_VERTICAL_JOYSTICK_AXIS);
+          Double turning_power = Robot.mController.getRawAxis(Constants.M_RIGHT_HORIZONTAL_JOYSTICK_AXIS);
+          Double drive_power = Robot.mController.getRawAxis(Constants.M_LEFT_VERTICAL_JOYSTICK_AXIS);
           subsystem.drive(drive_power - turning_power, drive_power + turning_power);
         }
       }
