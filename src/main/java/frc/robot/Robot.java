@@ -16,6 +16,7 @@ import frc.robot.Subsystems.DriveSys;
 import frc.robot.Subsystems.ExtenderSys;
 import frc.robot.Subsystems.PneumaticSys;
 import frc.robot.Subsystems.ClawSys;
+import frc.robot.Commands.ClawCmd;
 
 public class Robot extends TimedRobot {
 
@@ -30,7 +31,7 @@ public class Robot extends TimedRobot {
       driveSubsystem.setDefaultCommand(new DriveCmd());
       extenderSubsystem.setDefaultCommand(new ExtenderCmd());
       pneumaticSubsystem.setDefaultCommand(new PneumaticCmd());
-      clawSubsystem.setDefaultCommand(new ClawSys());
+      clawSubsystem.setDefaultCommand(new ClawCmd());
     
   }
 

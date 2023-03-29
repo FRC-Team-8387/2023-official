@@ -68,4 +68,7 @@ public class Constants {
     public static final int MAIN_X_BUTTON = 3;
     public static final int MAIN_LEFT_BUTTON = 5;
     public static final int MAIN_RIGHT_BUTTON = 6;
+    public static final int UNKNOWN_1 = 7;
+    public static final int UNKNOWN_2 = 8;
+
 }

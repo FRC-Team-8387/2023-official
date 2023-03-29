@@ -6,7 +6,7 @@ import frc.robot.Constants;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class ClawSys extends SubsystemBase {
-    private double CLAW_MOTOR_SPEED = 0.05; // -1.0 <= SPEED <= 1.0
+    private double CLAW_MOTOR_SPEED = 0.66; // -1.0 <= SPEED <= 1.0
     private WPI_VictorSPX clawMotor;
     
     public ClawSys() {

@@ -25,8 +25,8 @@ public class DriveSys extends SubsystemBase {
         //Invert motors
         leftFrontMotor.setInverted(Constants.LEFT_DRIVE_INVERTED);
         leftBackMotor.setInverted(Constants.LEFT_DRIVE_INVERTED);
-        rightFrontMotor.setInverted(Constants.RIGHT_DRIVE_INVERTED);
-        rightBackMotor.setInverted(Constants.RIGHT_DRIVE_INVERTED);
+        //rightFrontMotor.setInverted(Constants.RIGHT_DRIVE_INVERTED);
+        //rightBackMotor.setInverted(Constants.RIGHT_DRIVE_INVERTED);
     
         //Set drive power
         drivePowerPercent = 0.6;

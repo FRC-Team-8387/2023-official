@@ -19,9 +19,9 @@ public class ClawCmd extends CommandBase {
 
     @Override
     public void execute() {
-        if(Robot.controller.getRawButton(Constants.MAIN_A_BUTTON)) {
+        if(Robot.controller.getRawButton(Constants.UNKNOWN_1)) {
             subsystem.closeClaw();
-        } else if(Robot.controller.getRawButton(Constants.MAIN_B_BUTTON)) {
+        } else if(Robot.controller.getRawButton(Constants.UNKNOWN_2)) {
             subsystem.openClaw();
         } else {
             subsystem.stop();
