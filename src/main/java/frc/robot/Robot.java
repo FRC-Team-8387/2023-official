@@ -8,9 +8,10 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 //import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.GenericHID;
+import frc.robot.Commands.ClawCmd;
 import frc.robot.Commands.DriveCmd;
 import frc.robot.Commands.PneumaticCmd;
-import frc.robot.Commands.SetExtenderCmd;
+//import frc.robot.Commands.SetExtenderCmd;
 import frc.robot.Commands.ExtenderCmd;
 import frc.robot.Commands.FieldDisplayCmd;
 import frc.robot.Subsystems.ClawSys;
@@ -35,6 +36,7 @@ public class Robot extends TimedRobot {
       extenderSubsystem.setDefaultCommand(new ExtenderCmd());
       pneumaticSubsystem.setDefaultCommand(new PneumaticCmd());
       visionSubsytem.setDefaultCommand(new FieldDisplayCmd());
+      clawSubsystem.setDefaultCommand(new ClawCmd());
   }
 
   @Override

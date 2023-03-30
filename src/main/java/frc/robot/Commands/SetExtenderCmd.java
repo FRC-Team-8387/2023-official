@@ -26,7 +26,7 @@ public class SetExtenderCmd extends CommandBase{
 
     @Override
     public void initialize() {}
-
+    /*
     @Override
     public void execute() {
         if(Robot.jController.getRawButton(Constants.J_LEFT_BUTTON)) {
@@ -39,7 +39,7 @@ public class SetExtenderCmd extends CommandBase{
         double run = pidController.calculate(pos, subsystem.getSetPoint());
         subsystem.extend(run);
     }
-
+    */
     @Override
     public void end(boolean interrupted) {
         subsystem.stop();

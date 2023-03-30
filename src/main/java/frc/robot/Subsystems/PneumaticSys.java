@@ -15,7 +15,7 @@ public class PneumaticSys extends SubsystemBase {
     public PneumaticSys() {
         hub = new PneumaticHub(Constants.PNUEMATIC_HUB_ID);
 
-        liftSolenoid = new DoubleSolenoid(PneumaticsModuleType.REVPH, Constants.DOUBLE_SOLENOID_LIFT_FWD, Constants.DOUBLE_SOLENOID_LIFT_REV);
+        liftSolenoid = hub.makeDoubleSolenoid(Constants.DOUBLE_SOLENOID_LIFT_FWD, Constants.DOUBLE_SOLENOID_LIFT_REV);
     }
 
     public void start() {

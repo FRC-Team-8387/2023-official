@@ -19,10 +19,10 @@ public class ExtenderCmd extends CommandBase {
 
     @Override
     public void execute() {
-        if(Robot.jController.getRawButton(Constants.J_A_BUTTON)) {
+        if(Robot.jController.getRawAxis(Constants.J_EXTEND_TRIGGER) > 0.1) {
             subsystem.extend(1);
-        } else if(Robot.jController.getRawButton(Constants.J_B_BUTTON)) {
-            subsystem.extend(-1);
+        } else if(Robot.jController.getRawAxis(Constants.J_RETRACT_TRIGGER) > 0.1) {
+            subsystem.extend(-0.5);
         } else {
             subsystem.stop();
         }

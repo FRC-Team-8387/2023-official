@@ -21,7 +21,8 @@ public class PneumaticCmd extends CommandBase {
 
     @Override
     public void execute() {
-        if(Robot.jController.getRawButtonPressed(Constants.J_X_BUTTON)) {
+        if(Robot.jController.getRawButtonPressed(Constants.J_EXTENDER_LIFT_BUTTON)) {
+            System.out.println("Button Pressed");
             subsystem.toggle();
         }
     }
